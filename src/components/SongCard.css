@@ -1,0 +1,38 @@
+.song-card {
+  background-color: #181818;
+  border-radius: 8px;
+  padding: 16px;
+  width: 200px;
+  color: white;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.song-card:hover {
+  background-color: #282828;
+}
+
+.song-cover {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.song-card-info {
+  text-align: left;
+}
+
+.song-title {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.song-artist {
+  font-size: 0.9em;
+  color: #aaa;
+  margin: 0;
+}

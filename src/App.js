@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 
+// Nossos componentes e páginas
+import Header from './components/header';
+import Home from './pages/Home';
+import Search from './pages/Search';
+import Player from './components/Player';
+
 function App() {
+  const [currentSong, setCurrentSong] = useState(null);
+
+  const handlePlaySong = (song) => {
+    setCurrentSong(song);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+
+      <main className="App-content">
+        <Routes>
+          <Route path="/" element={<Home onPlaySong={handlePlaySong} />} />
+          <Route path="/search" element={<Search onPlaySong={handlePlaySong} />} />
+        </Routes>
+      </main>
+
+      <Player currentSong={currentSong} />
     </div>
   );
 }
