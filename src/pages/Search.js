@@ -12,7 +12,7 @@ function Search({ onPlaySong }) {
     if (!query) return;
 
     try {
-      const response = await fetch(`/search?q=${query}`);
+      const response = await fetch(`https://thingproxy.freeboard.io/fetch/https://api.deezer.com/search?q=${query}`);
       const data = await response.json();
       if (data && data.data) {
         setResults(data.data);

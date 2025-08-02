@@ -7,7 +7,7 @@ function Home({ onPlaySong }) {
   useEffect(() => {
     const fetchTopSongs = async () => {
       try {
-        const response = await fetch('/chart/0/tracks');
+        const response = await fetch('https://thingproxy.freeboard.io/fetch/https://api.deezer.com/chart/0/tracks');
         const data = await response.json();
         if (data && data.data) {
           setSongs(data.data);
