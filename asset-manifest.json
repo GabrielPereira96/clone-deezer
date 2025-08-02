@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/GabrielPereira96/clone-deezer/static/css/main.9f252888.css",
+    "main.js": "/GabrielPereira96/clone-deezer/static/js/main.8642ab21.js",
+    "index.html": "/GabrielPereira96/clone-deezer/index.html",
+    "main.9f252888.css.map": "/GabrielPereira96/clone-deezer/static/css/main.9f252888.css.map",
+    "main.8642ab21.js.map": "/GabrielPereira96/clone-deezer/static/js/main.8642ab21.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9f252888.css",
+    "static/js/main.8642ab21.js"
+  ]
+}
